@@ -1,0 +1,172 @@
+
+html  
+	color: #222 
+	line-height: 1.4 
+ 
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+	 
+\:active
+	outline: 0
+	outline-offset: 0
+\:hover
+	outline: 0
+	outline-offset: 0
+\:focus
+	outline: 0
+	outline-offset: 0
+
+::selection  
+	background: #b3d4fc 
+	text-shadow: none 
+ 
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr  
+	display: block 
+	height: 1px 
+	border: 0 
+	border-top: 1px solid #ccc 
+	margin: 1em 0 
+	padding: 0 
+ 
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video  
+	vertical-align: middle 
+ 
+
+/*
+ * Remove default fieldset styles.
+ */
+	 
+
+fieldset  
+	border: 0 
+	margin: 0 
+	padding: 0 
+ 
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea  
+	resize: vertical 
+ 
+ /* ==========================================================================
+  Author's custom styles
+  ========================================================================== */
+$primary-color: #415167
+$accent-color: #C7A17A
+	
+
+body
+	background: #F9FBFF
+	font-family: Nunito, sans-serif
+header
+	height: 768px
+	display: flex
+	justify-content: flex-end
+	align-items: flex-start
+	position: relative
+	.header_logo
+		position: absolute
+		left: 180px
+		top: 75px
+	h1
+		z-index: 1
+		position: absolute
+		bottom: 50px
+		left: 195px	
+		margin-top: 0px
+		margin-bottom: 0px
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 900
+		font-size: 54px
+		line-height: 70px
+		color: #415167
+		text-transform: uppercase
+		max-width: 470px
+		span
+			background: #C7A17A
+			color: #fff
+			padding: 2px 15px
+			display: block
+			margin-left: -15px
+	.header_video
+		position: relative
+		a
+			position: absolute
+			top: calc(50% - 51px)
+			left: calc(50% - 51px)
+	.menu
+		box-sizing: border-box
+		background: #415167
+		height: 100%
+		min-width: 275px
+		padding: 89px 0px 0px 56px
+		.header_basket
+			display: inline-block
+			position: relative
+			margin-bottom: 120px
+			span
+				background: #C7A17A
+				display: block
+				width: 20px
+				height: 20px
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				top: -13px
+				right: -13px
+				font-family: Nunito
+				font-style: normal
+				font-weight: 300
+				font-size: 14px
+				line-height: 19px
+				color: #F9FBFF
+				border-radius: 100%
+		nav
+			ul
+				list-style-type: none
+				padding-left: 0px
+				margin-top: 0px
+				margin-bottom: 0px
+				li
+					margin-bottom: 30px
+					a
+						font-family: Nunito
+						font-style: normal
+						font-weight: 300
+						font-size: 16px
+						line-height: 22px
+						color: #EDF0F5
+						text-decoration: none
+					a.active 
+						font-weight: bold
+
