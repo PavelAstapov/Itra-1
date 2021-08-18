@@ -62,7 +62,8 @@ video
  * Remove default fieldset styles.
  */
 	 
-
+p
+	margin-top: 0px
 fieldset  
 	border: 0 
 	margin: 0 
@@ -82,7 +83,10 @@ textarea
 $primary-color: #415167
 $accent-color: #C7A17A
 	
-
+.wrapper
+	width: 95%
+	max-width: 1104px
+	margin: 0 auto
 body
 	background: #F9FBFF
 	font-family: Nunito, sans-serif
@@ -169,4 +173,79 @@ header
 						text-decoration: none
 					a.active 
 						font-weight: bold
+#benefits
+	padding-top: 87.16px
+	.under_title
+		font-family: Nunito
+		font-style: normal
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		color: #415167
+		text-align: center
+		margin-bottom: 8px
+		margin-top: 0px
+	h2
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 900
+		font-size: 30px
+		line-height: 34px
+		color: #415167
+		margin: 0 auto
+		text-align: center
+		text-transform: uppercase
+	.benefits_box
+		margin-top: 92.2px
+		padding-bottom: 128.73px
+		display: grid
+		grid-template-columns: 226px 226px 226px 226px
+		justify-content: space-between
+		justify-items: center
+		.benefits_box_card
+			width: 90%
+			max-width: 226px
+			text-align: center
+			svg
+				display: inline-block
+				margin-bottom: 42.23px
+			h3
+				margin-top: 0px
+				margin-bottom: 12.11px
+				font-family: Nunito
+				font-style: normal
+				font-weight: bold
+				font-size: 24px
+				line-height: 28px
+				color: #232C38
+			p
+				margin-bottom: 0px
+				font-family: Nunito
+				font-style: normal
+				font-weight: 300
+				font-size: 16px
+				line-height: 22px
+				text-align: center
+				color: #151D28
+		@media(max-width: 768px)
+			grid-template-columns: 1fr 1fr
+			padding-bottom: 50px
+			.benefits_box_card
+				margin-bottom: 50px
+#coffee_catalog_row
+	width: 100%
+	padding-left: 130px
+	.coffee_catalog_row_slider
+		width: 100%
+		flex-direction: row
+		.coffee_catalog_row_card
+			margin: 15px
+			width: 559px
+			filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
+			background: #fff
+			display: flex
+			justify-content: flex-start
+			img
+				height: 100%
 
