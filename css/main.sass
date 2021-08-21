@@ -1,7 +1,10 @@
 
 html  
 	color: #222 
-	line-height: 1.4 
+	line-height: 1.4
+	overflow-x: hidden
+body
+	overflow-x: hidden
  
 
 /*
@@ -83,6 +86,13 @@ textarea
 $primary-color: #415167
 $accent-color: #C7A17A
 	
+
+@keyframes fadeEffect 
+  from 
+    opacity: 0
+  to 
+    opacity: 1
+
 .wrapper
 	width: 95%
 	max-width: 1104px
@@ -235,17 +245,318 @@ header
 				margin-bottom: 50px
 #coffee_catalog_row
 	width: 100%
-	padding-left: 130px
-	.coffee_catalog_row_slider
+	padding-top: 87.16px
+	padding-bottom: 97px
+	position: relative
+	&:after
+		content: ""
+		height: 100%
+		display: block
+		width: 384px
+		background: #415167
+		position: absolute
+		top: 0px
+		left: 0px
+		z-index: 0
+	.under_title
+		font-family: Nunito
+		font-style: normal
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		color: #415167
+		text-align: center
+		margin-bottom: 8px
+		margin-top: 0px
+		position: relative
+		z-index: 2
+	h2
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 900
+		font-size: 30px
+		line-height: 34px
+		color: #415167
+		margin: 0 auto
+		text-align: center
+		text-transform: uppercase
+		position: relative
+		z-index: 2
+	.coffee_catalog_row_box
+		position: relative
+		z-index: 2
 		width: 100%
-		flex-direction: row
-		.coffee_catalog_row_card
-			margin: 15px
-			width: 559px
-			filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
-			background: #fff
-			display: flex
-			justify-content: flex-start
-			img
-				height: 100%
+		margin-top: 47px
+		.coffee_catalog_row_slider
+			padding-top: 
+			width: 100%
+			.coffee_catalog_row_card
+				width: 559px
+				margin: 0 auto
+				margin-bottom: 30px
+				margin-top: 25px
+				filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5))
+				background: #fff
+				display: flex
+				justify-content: flex-start
+				opacity: 1
+				img
+					height: 100%
+					margin-right: 45px
+				.coffee_info
+					padding-top: 42px
+					p:nth-child(1)
+						font-family: Nunito
+						font-style: normal
+						font-weight: 600
+						font-size: 20px
+						line-height: 24px
+						color: #C7A17A
+						margin-bottom: 8px
+					p:nth-child(2)
+						font-family: Nunito
+						font-style: normal
+						font-weight: bold
+						font-size: 24px
+						line-height: 28px
+						color: #232C38
+						margin-bottom: 24px
+					p:nth-child(3)
+						font-family: Nunito
+						font-style: normal
+						font-weight: 300
+						font-size: 16px
+						line-height: 22px
+						color: #151D28
+						margin-bottom: 30px
+					div
+						display: flex
+						align-items: center
+					button
+						font-family: Nunito
+						font-style: normal
+						font-weight: bold
+						font-size: 16px
+						line-height: 22px
+						text-align: center
+						color: #F9FBFF
+						padding: 5px 24px
+						background: #C7A17A
+						border-radius: 19px
+						border: none
+						margin-right: 29px
+						&:hover
+							cursor: pointer
+							background: #ad8b69
+					a
+						font-family: Nunito
+						font-style: normal
+						font-weight: bold
+						font-size: 16px
+						line-height: 22px
+						color: #415167
+						text-decoration: none
+			.slick-cloned:nth-child(2)
+				opacity: 0
+			.slick-center.slick-active
+				opacity: 1
+			.slick-active, .slick-slide
+				opacity: 0.5
+			.next
+				position: absolute
+				top: calc(50% - 24px)
+				right: 66px
+				width: 48px
+				height: 48px
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+				border-radius: 100%
+				background: url('../img/arrow_r.svg') #C7A17A no-repeat center / auto
+				&:hover
+					cursor: pointer
+					background: url('../img/arrow_r.svg') #ad8b69 no-repeat center / auto
+			.prev
+				visibility: hidden
+				-moz-transform: rotate(180deg)
+				-webkit-transform: rotate(180deg)
+				-o-transform: rotate(180deg)
+				-ms-transform: rotate(180deg)
+				transform: rotate(180deg)
+				position: absolute
+				z-index: 3
+				top: calc(50% - 24px)
+				left: 66px
+				width: 48px
+				height: 48px
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+				border-radius: 100%
+				background: url('../img/arrow_r.svg') #C7A17A no-repeat center / auto
+				&:hover
+					cursor: pointer
+					background: url('../img/arrow_r.svg') #ad8b69 no-repeat center / auto
+#gifts
+	padding-top: 86px
+	padding-bottom: 126px
+	position: relative
+	&:after
+		content: ""
+		height: 100%
+		display: block
+		width: 90%
+		max-width: 1076px
+		background: #EDF0F5
+		position: absolute
+		top: 0px
+		left: 0px
+		z-index: 0
+	.under_title
+		font-family: Nunito
+		font-style: normal
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		color: #415167
+		text-align: center
+		margin-bottom: 8px
+		margin-top: 0px
+		position: relative
+		z-index: 2
+	h2
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 900
+		font-size: 30px
+		line-height: 34px
+		color: #415167
+		margin: 0 auto
+		text-align: center
+		text-transform: uppercase
+		position: relative
+		z-index: 2
+	.gifts_tab
+		padding-left: 250px
+		position: relative
+		z-index: 3
+		margin-top: 68px
+		display: flex
+		justify-content: center
+		align-items: stretch
+		.tab_box
+			box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5)
+			.tab_box_content
+				padding-right: 68px
+				animation: fadeEffect 1.5s
+				background: #fff
+				max-width: 794px
+				box-sizing: border-box
+				width: 100%
+				display: flex
+				align-items: flex-start
+				padding-top: 50px
+				display: none
+				img
+					margin-right: 91px
+					margin-left: -246px
+				p:nth-child(1)
+					margin-top: 12px
+					font-family: Nunito
+					font-style: normal
+					font-weight: 600
+					font-size: 20px
+					line-height: 24px
+					color: #C7A17A
+					margin-bottom: 10px
+				p:nth-child(2)
+					font-family: Nunito
+					font-style: normal
+					font-weight: bold
+					font-size: 24px
+					line-height: 28px
+					color: #232C38
+					margin-bottom: 12px
+				p:nth-child(3)
+					font-family: Nunito
+					font-style: normal
+					font-weight: 300
+					font-size: 16px
+					line-height: 22px
+					color: #151D28
+					margin-bottom: 24px
+				.icons_info
+					display: flex
+					margin-bottom: 46px
+					div
+						display: flex
+						align-items: center
+						p
+							margin-left: 19px
+							margin-bottom: 0px
+							font-family: Nunito
+							font-style: normal
+							font-weight: 600
+							font-size: 16px
+							line-height: 22px
+							color: #415167
+							span
+								display: block
+								font-weight: 300
+					div:nth-child(1)
+						margin-right: 80px
+				.buttons
+					button
+						font-family: Nunito
+						font-style: normal
+						font-weight: bold
+						font-size: 16px
+						line-height: 22px
+						text-align: center
+						color: #F9FBFF
+						padding: 7.75px 40px
+						background: #C7A17A
+						border-radius: 19px
+						border: none
+						margin-right: 124px
+						&:hover
+							cursor: pointer
+							background: #ad8b69
+					a
+						font-family: Nunito
+						font-style: normal
+						font-weight: bold
+						font-size: 16px
+						line-height: 22px
+						color: #415167
+						text-decoration: none
 
+
+			.tab_box_content:nth-child(1)
+				display: flex
+		.tab_pagination
+			display: flex
+			flex-direction: column
+			button
+				cursor: pointer
+				width: 88px
+				display: flex
+				align-items: center
+				justify-content: center
+				font-family: Montserrat
+				font-style: normal
+				font-weight: 900
+				font-size: 30px
+				line-height: 34px
+				color: #415167
+				border: none
+				height: 33.3%
+				background: #EDF0F5
+				border: 0.5px solid #EDF0F5
+				opacity: 0.3
+				transition: 0.2s
+				&:hover
+					background: #fff
+					opacity: 1
+			button.active
+				background: #fff
+				opacity: 1
+					
