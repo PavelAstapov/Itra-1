@@ -237,6 +237,10 @@ header .menu nav ul li a {
   text-decoration: none;
 }
 
+header .menu nav ul li a:hover {
+  font-weight: bold;
+}
+
 header .menu nav ul li a.active {
   font-weight: bold;
 }
@@ -772,5 +776,209 @@ header .menu nav ul li a.active {
 #gifts .gifts_tab .tab_pagination button.active {
   background: #fff;
   opacity: 1;
+}
+
+#coffee_catalog_columns {
+  padding-top: 88px;
+  padding-bottom: 103px;
+}
+
+#coffee_catalog_columns .under_title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #415167;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+#coffee_catalog_columns h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  color: #415167;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider {
+  margin-top: 39px;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card {
+  max-width: 360px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-bottom: 42px;
+  background: #fff;
+  -webkit-filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
+          filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card .price {
+  margin-top: 42px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card .price p:nth-child(1) {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #C7A17A;
+  margin-bottom: 0px;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card .price p:nth-child(2) {
+  font-family: Nunito;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #415167;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card p:nth-child(3) {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232C38;
+  margin-bottom: 10px;
+  padding-left: 42px;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card p:nth-child(4) {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0px 38px 0px 42px;
+  color: #151D28;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #F9FBFF;
+  padding: 5px 24px;
+  background: #C7A17A;
+  border-radius: 19px;
+  border: none;
+  margin-right: 57px;
+  margin-left: 42px;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card button:hover {
+  cursor: pointer;
+  background: #ad8b69;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .coffee_catalog_columns_card a {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #415167;
+  text-decoration: none;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .slick-cloned:nth-child(3) {
+  visibility: hidden;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .slick-active + .slick-slide, #coffee_catalog_columns .coffee_catalog_columns_slider .slick-cloned, #coffee_catalog_columns .coffee_catalog_columns_slider .slick-slide {
+  opacity: 0.5;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .slick-active.slick-current, #coffee_catalog_columns .coffee_catalog_columns_slider .slick-slide.slick-active {
+  opacity: 1;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .next {
+  position: absolute;
+  top: calc(50% - 47px);
+  right: 66px;
+  width: 48px;
+  height: 48px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background: url("../img/arrow_r.svg") #C7A17A no-repeat center/auto;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .next:hover {
+  cursor: pointer;
+  background: url("../img/arrow_r.svg") #ad8b69 no-repeat center/auto;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .prev {
+  visibility: hidden;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 47px);
+  left: 66px;
+  width: 48px;
+  height: 48px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background: url("../img/arrow_r.svg") #C7A17A no-repeat center/auto;
+}
+
+#coffee_catalog_columns .coffee_catalog_columns_slider .prev:hover {
+  cursor: pointer;
+  background: url("../img/arrow_r.svg") #ad8b69 no-repeat center/auto;
+}
+
+footer {
+  background: #EDF0F5;
+  text-align: center;
+  font-family: Nunito;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #415167;
+  padding-top: 18px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

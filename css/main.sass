@@ -122,11 +122,11 @@ header
 		font-weight: 900
 		font-size: 54px
 		line-height: 70px
-		color: #415167
+		color: $primary-color
 		text-transform: uppercase
 		max-width: 470px
 		span
-			background: #C7A17A
+			background: $accent-color
 			color: #fff
 			padding: 2px 15px
 			display: block
@@ -139,7 +139,7 @@ header
 			left: calc(50% - 51px)
 	.menu
 		box-sizing: border-box
-		background: #415167
+		background: $primary-color
 		height: 100%
 		min-width: 275px
 		padding: 89px 0px 0px 56px
@@ -148,7 +148,7 @@ header
 			position: relative
 			margin-bottom: 120px
 			span
-				background: #C7A17A
+				background: $accent-color
 				display: block
 				width: 20px
 				height: 20px
@@ -181,6 +181,8 @@ header
 						line-height: 22px
 						color: #EDF0F5
 						text-decoration: none
+						&:hover
+							font-weight: bold
 					a.active 
 						font-weight: bold
 #benefits
@@ -192,7 +194,7 @@ header
 		font-size: 20px
 		line-height: 24px
 		text-align: center
-		color: #415167
+		color: $primary-color
 		text-align: center
 		margin-bottom: 8px
 		margin-top: 0px
@@ -202,7 +204,7 @@ header
 		font-weight: 900
 		font-size: 30px
 		line-height: 34px
-		color: #415167
+		color: $primary-color
 		margin: 0 auto
 		text-align: center
 		text-transform: uppercase
@@ -253,7 +255,7 @@ header
 		height: 100%
 		display: block
 		width: 384px
-		background: #415167
+		background: $primary-color
 		position: absolute
 		top: 0px
 		left: 0px
@@ -265,7 +267,7 @@ header
 		font-size: 20px
 		line-height: 24px
 		text-align: center
-		color: #415167
+		color: $primary-color
 		text-align: center
 		margin-bottom: 8px
 		margin-top: 0px
@@ -277,7 +279,7 @@ header
 		font-weight: 900
 		font-size: 30px
 		line-height: 34px
-		color: #415167
+		color: $primary-color
 		margin: 0 auto
 		text-align: center
 		text-transform: uppercase
@@ -312,7 +314,7 @@ header
 						font-weight: 600
 						font-size: 20px
 						line-height: 24px
-						color: #C7A17A
+						color: $accent-color
 						margin-bottom: 8px
 					p:nth-child(2)
 						font-family: Nunito
@@ -342,7 +344,7 @@ header
 						text-align: center
 						color: #F9FBFF
 						padding: 5px 24px
-						background: #C7A17A
+						background: $accent-color
 						border-radius: 19px
 						border: none
 						margin-right: 29px
@@ -355,7 +357,7 @@ header
 						font-weight: bold
 						font-size: 16px
 						line-height: 22px
-						color: #415167
+						color: $primary-color
 						text-decoration: none
 			.slick-cloned:nth-child(2)
 				opacity: 0
@@ -371,7 +373,7 @@ header
 				height: 48px
 				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
 				border-radius: 100%
-				background: url('../img/arrow_r.svg') #C7A17A no-repeat center / auto
+				background: url('../img/arrow_r.svg') $accent-color no-repeat center / auto
 				&:hover
 					cursor: pointer
 					background: url('../img/arrow_r.svg') #ad8b69 no-repeat center / auto
@@ -390,7 +392,7 @@ header
 				height: 48px
 				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
 				border-radius: 100%
-				background: url('../img/arrow_r.svg') #C7A17A no-repeat center / auto
+				background: url('../img/arrow_r.svg') $accent-color no-repeat center / auto
 				&:hover
 					cursor: pointer
 					background: url('../img/arrow_r.svg') #ad8b69 no-repeat center / auto
@@ -416,7 +418,7 @@ header
 		font-size: 20px
 		line-height: 24px
 		text-align: center
-		color: #415167
+		color: $primary-color
 		text-align: center
 		margin-bottom: 8px
 		margin-top: 0px
@@ -428,7 +430,7 @@ header
 		font-weight: 900
 		font-size: 30px
 		line-height: 34px
-		color: #415167
+		color: $primary-color
 		margin: 0 auto
 		text-align: center
 		text-transform: uppercase
@@ -465,7 +467,7 @@ header
 					font-weight: 600
 					font-size: 20px
 					line-height: 24px
-					color: #C7A17A
+					color: $accent-color
 					margin-bottom: 10px
 				p:nth-child(2)
 					font-family: Nunito
@@ -497,7 +499,7 @@ header
 							font-weight: 600
 							font-size: 16px
 							line-height: 22px
-							color: #415167
+							color: $primary-color
 							span
 								display: block
 								font-weight: 300
@@ -513,7 +515,7 @@ header
 						text-align: center
 						color: #F9FBFF
 						padding: 7.75px 40px
-						background: #C7A17A
+						background: $accent-color
 						border-radius: 19px
 						border: none
 						margin-right: 124px
@@ -526,7 +528,7 @@ header
 						font-weight: bold
 						font-size: 16px
 						line-height: 22px
-						color: #415167
+						color: $primary-color
 						text-decoration: none
 
 
@@ -546,7 +548,7 @@ header
 				font-weight: 900
 				font-size: 30px
 				line-height: 34px
-				color: #415167
+				color: $primary-color
 				border: none
 				height: 33.3%
 				background: #EDF0F5
@@ -559,4 +561,161 @@ header
 			button.active
 				background: #fff
 				opacity: 1
+#coffee_catalog_columns
+	padding-top: 88px
+	padding-bottom: 103px
+	.under_title
+		font-family: Nunito
+		font-style: normal
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		color: $primary-color
+		text-align: center
+		margin-bottom: 8px
+		margin-top: 0px
+		position: relative
+		z-index: 2
+	h2
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 900
+		font-size: 30px
+		line-height: 34px
+		color: $primary-color
+		margin: 0 auto
+		text-align: center
+		text-transform: uppercase
+		position: relative
+		z-index: 2
+	.coffee_catalog_columns_slider
+		margin-top: 39px
+		.coffee_catalog_columns_card
+			max-width: 360px
+			margin-top: 25px
+			margin-bottom: 25px
+			margin-right: 15px
+			margin-left: 15px
+			padding-bottom: 42px
+			background: #fff
+			filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5))
+			.price
+				margin-top: 42px
+				padding-left: 42px
+				margin-bottom: 10px
+				display: flex
+				align-items: center
+				p:nth-child(1)
+					font-family: Nunito
+					font-style: normal
+					font-weight: 600
+					font-size: 20px
+					line-height: 24px
+					color: $accent-color
+					margin-bottom: 0px
+				p:nth-child(2)
+					font-family: Nunito
+					font-style: italic
+					font-weight: 300
+					font-size: 14px
+					line-height: 19px
+					text-decoration-line: line-through
+					color: $primary-color
+					margin-bottom: 0px
+					margin-left: 20px
+			p:nth-child(3)
+				font-family: Nunito
+				font-style: normal
+				font-weight: bold
+				font-size: 24px
+				line-height: 28px
+				color: #232C38
+				margin-bottom: 10px
+				padding-left: 42px
+			p:nth-child(4)
+				font-family: Nunito
+				font-style: normal
+				font-weight: 300
+				font-size: 16px
+				line-height: 22px
+				padding: 0px 38px 0px 42px
+				color: #151D28
+				width: 100%
+				box-sizing: border-box
+				margin-bottom: 32px
+			button
+				font-family: Nunito
+				font-style: normal
+				font-weight: bold
+				font-size: 16px
+				line-height: 22px
+				text-align: center
+				color: #F9FBFF
+				padding: 5px 24px
+				background: $accent-color
+				border-radius: 19px
+				border: none
+				margin-right: 57px
+				margin-left: 42px
+				&:hover
+					cursor: pointer
+					background: #ad8b69
+			a
+				font-family: Nunito
+				font-style: normal
+				font-weight: bold
+				font-size: 16px
+				line-height: 22px
+				color: $primary-color
+				text-decoration: none
+		.slick-cloned:nth-child(3)
+			visibility: hidden
+		.slick-active + .slick-slide, .slick-cloned, .slick-slide
+			opacity: 0.5
+		.slick-active.slick-current, .slick-slide.slick-active
+			opacity: 1
+		.next
+			position: absolute
+			top: calc(50% - 47px)
+			right: 66px
+			width: 48px
+			height: 48px
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+			border-radius: 100%
+			background: url('../img/arrow_r.svg') $accent-color no-repeat center / auto
+			&:hover
+				cursor: pointer
+				background: url('../img/arrow_r.svg') #ad8b69 no-repeat center / auto
+		.prev
+			visibility: hidden
+			-moz-transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			-o-transform: rotate(180deg)
+			-ms-transform: rotate(180deg)
+			transform: rotate(180deg)
+			position: absolute
+			z-index: 3
+			top: calc(50% - 47px)
+			left: 66px
+			width: 48px
+			height: 48px
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+			border-radius: 100%
+			background: url('../img/arrow_r.svg') $accent-color no-repeat center / auto
+			&:hover
+				cursor: pointer
+				background: url('../img/arrow_r.svg') #ad8b69 no-repeat center / auto
+footer
+	background: #EDF0F5
+	text-align: center
+	font-family: Nunito
+	font-style: italic
+	font-weight: 300
+	font-size: 16px
+	line-height: 22px
+	color: $primary-color
+	padding-top: 18px
+	padding-bottom: 20px
+
 					
